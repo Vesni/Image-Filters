@@ -1,0 +1,17 @@
+body{
+  text-align : center;
+}
+img {
+  width: 350px;
+  border-radius: 20px;
+  border: 9px solid black;
+}
+button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color:lightskyblue;
+  color: red;
+}
+button:hover{
+  color : yellow;
+}
