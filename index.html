@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Applying filter toImage </h2>
+  
+  <img id ='image' src = 'https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630'</img>
+  <div class ='button'>
+  <button onclick="filters('grayscale(100%)')">Black and White</button>
+  <button onclick="filters('blur(5px)')">Blur</button>
+  <button onclick="filters('sepia(100%)')">Sepia</button>
+<button onclick="filters('invert(100%)')">Invert</button>
+  <button onclick="filters('brightness(150%)')">Brightness</button>
+  <button onclick="filters('contrast(200%)')">Contrast</button>
+  <button onclick="filters('opacity(20%)')">Opacity</button>
+<button onclick="filters('saturate(10%)')">Saturate</button>
+  <button onclick="filters('drop-shadow(10px 10px 10px gray)')">Shadow</button>
+    <button onclick="filters('none')">Original</button>
+
+  </div>
+   <script>
+function filters(value){
+
+  let img_element = document.getElementById("image");
+  img_element.style.filter = value;
+
+}
+</script>
+</body>
+ 
+</html>
